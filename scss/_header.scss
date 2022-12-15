@@ -1,0 +1,57 @@
+@import "./global";
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+
+    & .circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #017143;
+        clip-path: circle(600px at right 800px);
+    }
+
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & header__logo{
+            position: relative;
+            max-width: 80px;
+        }
+        & ul{
+            position: relative;
+            display: flex;
+
+            & li{
+                list-style: none;
+                
+                & a{
+                    display: inline-block;
+                    color: #333;
+                    font-weight: 400;
+                    margin-left: 40px;
+                    text-decoration: none;
+                }
+
+            }
+
+        }
+    }
+
+}
